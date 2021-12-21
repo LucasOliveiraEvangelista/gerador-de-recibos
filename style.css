@@ -1,0 +1,78 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    height: 100vh;
+    width: 100vw;
+    background: #1b082e;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.dados{
+    margin: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background: #da4008;
+    border-radius: 10px;
+    box-shadow: 2px 0 18px #00000050;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+.dados input, .dados select{
+    background-color: #ffffff80;
+    border: none;
+    border-left: 4px solid #333;
+    width: 30%;
+    height: 35px;
+    box-shadow: 0 8px 10px #00000050;
+    padding: 5px;
+}
+.dados button{
+    width: 30%;
+    height: 35px;
+    background-color: #0e1e41;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 0 10px #00000050;
+    transition: 0.5s ease;
+
+}
+.dados button:hover{
+    background-color: #1a1aa7;
+}
+.print{
+    display: none;
+    margin: 2px;
+    padding: 6px;
+    border-radius: 10%;
+    color: #000;
+    font-size: 1.5rem;
+}
+.print span{
+    font-size: 1rem;
+}
+.print h1{
+    font-size: 2rem;
+}
+.print span{
+    font-weight: bold;
+}
+@media print {
+    .print{
+        display: block;
+    }
+    .dados{
+        display: none;
+    }
+}

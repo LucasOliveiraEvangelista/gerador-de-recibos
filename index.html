@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recibo</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="dados">
+            <label for="recebe">Recebemos:</label>
+            <input type="text" id="recebe"><br><br>
+    
+            <label for="valor">Valor:</label>
+            <input type="number" step="0.01" id="valor"><br><br>
+    
+            <label for="quant">Quantidade:</label>
+            <input type="number" id="quant"><br><br>
+    
+            <label for="pag">Tipo de pagamento</label>
+           <select name="pag" id="pag">
+               <option value=""></option>
+               <option value="Crédito">Crédito</option>
+               <option value="Débito">Débito</option>
+               <option value="Dinheiro">Dinheiro</option>
+               <option value="Pix">PIX</option>
+           </select>
+            <br><br>
+    
+            <button onclick="gerarRecibo()">Gerar Recibo</button>
+        </div>
+        
+    
+    
+        <div class="print">
+            <h1>SOS Máscaras</h1><br>
+            <h4><hr>Cupom não fiscal<hr> </h4><br>
+            <p>Comprador: <span id="recibo_nome"></span></p><br>
+            <p>Valor: R$ <span id="recibo_valor">0,00</span></p><br>
+            <p>Quantidade: <span id="recibo_quant"></span></p><br>
+            <p>Data: <span id="recibo_data"></span></p><br>
+            <p>Pagamento: <span id="recibo_pag"></span></p><br>
+            <hr>
+            <h6>SOS Máscaras</h6>
+            <h6>Rua José Paulino, 911 - Bom Retiro, São Paulo - SP </h6>
+            <h6>01120-001</h6>
+            <h6>(11) 97828-4388</h6>
+            <br>
+
+            <h6 align="center" >* Obrigado e Volte Sempre *</h6>
+        </div>
+    
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
